@@ -1,4 +1,4 @@
-{% extends 'zhytomyrska_kramnytsia/index.html'%}
+{% extends 'index.html'%}
 {% block content %}
 
 <div class="post">
@@ -18,3 +18,21 @@
     </div>
 
 {% endblock %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem('liked') === 'true') {
+      document.getElementById('like-btn').disabled = true;
+    }
+  });
+
+  function likePost() {
+    if (localStorage.getItem('liked') !== 'true') {
+      const likeCount = document.getElementById('like-count');
+      let count = parseInt(likeCount.innerText);
+      likeCount.innerText = ++count;
+      localStorage.setItem('liked', 'true');
+      document.getElementById('like-btn').disabled = true;
+    }
+  }
+</script>

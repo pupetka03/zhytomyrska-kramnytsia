@@ -4,21 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Профіль користувача</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Головна</a></li>
-          <li><a href="#">Профіль</a></li>
-          <li><a href="#">Друзі</a></li>
-          <li><a href="#">Повідомлення</a></li>
-          <li><a href="#">Сповіщення</a></li>
-          <li class="search-box">
-            <input type="text" placeholder="Пошук">
-          </li>
-        </ul>
-    </nav>
+  {% include 'includes/navbar.html' %}
     <main>
         <div class="profile-container">
             <div class="profile-photo">
