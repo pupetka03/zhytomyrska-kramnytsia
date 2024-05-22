@@ -1,0 +1,20 @@
+{% extends 'zhytomyrska_kramnytsia/index.html'%}
+{% block content %}
+
+<div class="post">
+    <div class="post-header">
+      <h2>Turist</h2>
+      <p>1 годину тому</p>
+    </div>
+    <div class="post-content">
+      <p>Пари́ж — столиця Франції, адміністративний центр регіону Іль-де-Франс. 
+        Окремий департамент Франції. 
+        Розташований на річці Сена. Населення — 2 175 601 особа, міська агломерація — 10 млн, 
+        у 2015 році населення міста становило 2 206 488 осіб!</p>
+      <img src="static/images/paris.jpg" alt="Зображення посту" class="post-image">
+    </div>
+    <div class="post-actions">
+      <button class="like-btn" id="like-btn" onclick="likePost()">Лайк <span id="like-count">0</span></button>
+    </div>
+
+{% endblock %}

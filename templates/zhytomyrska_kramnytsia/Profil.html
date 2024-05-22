@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профіль користувача</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="#">Профіль</a></li>
+          <li><a href="#">Друзі</a></li>
+          <li><a href="#">Повідомлення</a></li>
+          <li><a href="#">Сповіщення</a></li>
+          <li class="search-box">
+            <input type="text" placeholder="Пошук">
+          </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="profile-container">
+            <div class="profile-photo">
+                <img src="images/avatarka.png" alt="Фото користувача">
+            </div>
+            <div class="profile-info">
+                <h2>Zhytomyrska_kramnytsia</h2>
+                <div class="profile-stats">
+                    <span>Дописів: 100</span>
+                    <span>Читачів: 200</span>
+                    <span>Відстежувань: 150</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main>
+        <div class="post">
+          <div class="post-header">
+            <h2>Turist</h2>
+            <p>1 годину тому</p>
+          </div>
+          <div class="post-content">
+            <p>Пари́ж — столиця Франції, адміністративний центр регіону Іль-де-Франс. 
+              Окремий департамент Франції. 
+              Розташований на річці Сена. Населення — 2 175 601 особа, міська агломерація — 10 млн, 
+              у 2015 році населення міста становило 2 206 488 осіб!</p>
+            <img src="images/paris.jpg" alt="Зображення посту" class="post-image">
+          </div>
+          <div class="post-actions">
+            <button class="like-btn" id="like-btn" onclick="likePost()">Лайк <span id="like-count">0</span></button>
+          </div>
+    </main>
+</body>
+</html>
